@@ -1,0 +1,8 @@
+name: story
+type: theme
+libraries:
+  - story/global-styling
+version: 9.3.8
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: olivero

@@ -1,0 +1,13 @@
+
+{% set cta = node.field_cta[0].value %}
+{% set  img =  content.field_image[0]['#item'].entity.fileUri|image_style('236_177')%}
+<div class="card mb-2">
+  <img src="{{ img }}" class="card-img-top" alt="...">
+  <div class="card-body">
+  <h5 class="card-title">{{label}}</h5>
+    <div class="card-text">
+    {{ content.body}}
+    </div>
+    <a href="{{cta.uri}}" class="btn btn-primary">{{cta.title}}</a>
+  </div>
+</div>

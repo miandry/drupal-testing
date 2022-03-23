@@ -1,0 +1,17 @@
+<?php
+
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function story_preprocess_node(&$variables) {
+  // $node = $variables['node'];
+  // // preprocess get nid stories
+  // if ($node->bundle() == 'article') {
+  //      $story_id = [];
+  //      foreach( $node->field_stories  as $story ){
+  //         $story_id[] = $story->entity->id();
+  //      }
+  //      $variables['stories'] = $story_id ;
+  // }
+}

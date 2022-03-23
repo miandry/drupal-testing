@@ -1,0 +1,9 @@
+global-styling:
+   version: 1.0
+   css:
+    theme:
+      css/bootstrap.min.css : {}
+      css/story.css : {}
+   js:
+      js/bootstrap.bundle.min.js : {}
+      js/story.js : {}

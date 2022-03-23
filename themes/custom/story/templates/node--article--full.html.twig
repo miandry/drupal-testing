@@ -1,0 +1,19 @@
+
+
+<div class="container">
+  <div class="row cards">
+    <input type="hidden" id="story-size" value="{{node.field_stories|length}}">
+    {% set row = 0 %}
+    {% for key,story in node.field_stories %}
+        {% set story_nid = story.value.target_id %}   
+        <div data-row="{{row}}" class="row-{{row}} col-sm-6 col-md-6 col-lg-4 card-story " data-number="{{key}}" id="story-{{key}}">
+          {{ drupal_entity('node', story_nid, 'card') }}   
+        </div>
+        
+        {% if loop.index is divisible by(3) %}
+            {% set row = row + 1 %}
+        {% endif %}    
+    {% endfor %}
+  </div>
+</div>
+ 
